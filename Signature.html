@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Générateur de Signature Courriel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Générateur de Signature Courriel</h1>
+        <form id="signatureForm">
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="titre">Titre (bilingue) :</label>
+            <input type="text" id="titre" name="titre" required>
+
+            <label for="mobile">Mobile :</label>
+            <input type="tel" id="mobile" name="mobile" required>
+
+            <label for="logo">Sélectionnez le logo :</label>
+            <select id="logo" name="logo" required>
+                <option value="groupe-vitre-art">Groupe Vitre-Art</option>
+                <option value="chronoglass">Chronoglass</option>
+                <option value="barazin">Barazin</option>
+            </select>
+
+            <button type="submit">Générer la Signature</button>
+        </form>
+
+        <div id="signatureOutput">
+            <h2>Votre Signature :</h2>
+            <div id="signaturePreview"></div>
+            <button id="copyButton">Copier la Signature</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
